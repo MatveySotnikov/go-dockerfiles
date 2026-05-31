@@ -14,15 +14,22 @@
    docker run --rm -p 8082:8082 -e TASKS_PORT=8082 techip-tasks:0.1
    ```
 
- 2. **Запуск через Docker Compose**
+
+<img width="1093" height="139" alt="image" src="https://github.com/user-attachments/assets/9636defc-6c74-455e-836a-af6ca64b3a80" />
+
+
+ 3. **Запуск через Docker Compose**
     ``` bash
     cd deploy
     docker compose up -d --build
     ```
-3. **Проверка работы**
+4. **Проверка работы**
    curl http://localhost:8082/health
 
-4. **Ожидаемый ответ**
+<img width="1260" height="476" alt="image" src="https://github.com/user-attachments/assets/680add52-2012-4f0f-a022-5ebd51568a39" />
+
+
+5. **Ожидаемый ответ**
    ```json
     {"status":"ok","service":"tasks"}
    ```
@@ -37,11 +44,18 @@
 
 Docker Compose управляет контейнером, пробрасывает порт и передаёт переменные окружения.
 
+<img width="1276" height="163" alt="image" src="https://github.com/user-attachments/assets/434b4251-3613-46b3-b993-2c043299415d" />
+
+
 5.**Остановка**
 ```bash
  cd deploy
 docker compose down
 ```
+
+<img width="638" height="118" alt="image" src="https://github.com/user-attachments/assets/6b992184-b5de-4a3e-a33c-acbead545a68" />
+
+
 
 **Назначение:**
 
